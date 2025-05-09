@@ -1,9 +1,10 @@
 import streamlit as st
 
-st.title("🎈 선준이의 첫번째 앱!")
-st.write(
-    "안녕하세요! 반갑습니다. 저는 박선준입니다."
+st.title("🎈 선준이의 천번째 앺!")
+st.header(
+    "안녕하세요! 저는 박선준임니다."
 )
+st.write("버튼을 클릭해주세요!")
 if st.button("클릭하세요")==1:
     st.write("이 버튼입니다!")
 
