@@ -19,3 +19,10 @@ if st.button("클릭인가요?")==1:
 if st.button("클릭입니다")==1:
     st.write("그 버튼이 아닙니다.")
 
+# 여러 옵션 중 하나 선택
+gender = st.radio("성별을 선택하세요", ["남성", "여성", "기타"])
+if gender == "기타":
+    st.write("그런 성별은 없습니다.")
+else:
+    st.write("선택한 성별:", gender)
+
