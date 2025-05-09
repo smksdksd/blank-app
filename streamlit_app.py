@@ -22,7 +22,13 @@ if st.button("클릭인가요?")==1:
     st.link_button("혹시 이건가?","https://www.google.com/search?q=%EA%B7%B8%EA%B1%B0+%EC%95%84%EB%8B%8C%EB%8D%B0&oq=%EA%B7%B8%EA%B1%B0+%EC%95%84%EB%8B%8C%EB%8D%B0&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIGCAQQABgeMggIBRAAGAgYHjIICAYQABgIGB4yCAgHEAAYCBgeMggICBAAGAUYHjIICAkQABgFGB7SAQgzMjE4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on")
 
 if st.button("클릭입니다")==1:
-    st.write("그 버튼이 아닙니다.")
+    # st.tabs(["이름1", "이름2", ...]): 탭 인터페이스 생성
+    tab1, tab2 = st.tabs(["탭 1", "탭 2"])  # 2개의 탭 생성
+
+    with tab1:
+        st.write("이거")  # 첫 번째 탭에 표시할 내용
+    with tab2:
+        st.write("아닌데.")  # 두 번째 탭에 표시할 내용
 
 # 여러 옵션 중 하나 선택
 gender = st.radio("성별을 선택하세요", ["남성", "여성", "기타"])
